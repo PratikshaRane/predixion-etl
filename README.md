@@ -110,11 +110,3 @@ when calculating averages (as done in Q3).
 
 ---
 
-## What I'd Do Differently at Scale
-
-- **Replace SQLite with PostgreSQL or BigQuery** for concurrent access and larger data volumes
-- **Use Apache Airflow** to schedule and orchestrate the pipeline on a cron
-- **Add schema versioning** with tools like Great Expectations for data quality checks
-- **Stream ingestion** with Kafka instead of batch JSON files for real-time call data
-- **Partition the calls table** by call_date for faster analytical queries at scale
-- **Containerize with Docker** so the pipeline runs identically on any machine
